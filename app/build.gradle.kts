@@ -1,32 +1,26 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
-
 }
 
+group = "com.github.allhadid8585"
+version = "1.1.0"
+
 android {
-    namespace = "com.example.daterangepicker"
     compileSdk = 34
+    namespace = "com.github.allhadid8585.daterangepicker"
 
     defaultConfig {
-        applicationId = "com.example.daterangepicker"
-        minSdk = 26
+        minSdk = 21
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -50,6 +44,7 @@ android {
     }
 
 }
+
 
 dependencies {
 
