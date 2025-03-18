@@ -310,7 +310,7 @@ fun DateRangePickerDialog(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DateRangeTextField(
+private fun DateRangeTextField(
     selectedStartDate: Date?,
     selectedEndDate: Date?,
     onDateRangeFieldSelected: (Date?, Date?) -> Unit
@@ -427,7 +427,7 @@ fun DateRangeTextField(
 
 
 @Composable
-fun CalendarGrid(
+private fun CalendarGrid(
     year: Int,
     month: Int,
     selectedStartDate: Date?,
